@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Lato-Black';
+    src: url(./assets/Lato-Black.ttf);
+  }
+
+  @font-face {
+    font-family: 'Lato-Bold';
+    src: url(./assets/Lato-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Lato-Light';
+    src: url(./assets/Lato-Light.ttf);
+  }
+
+  @font-face {
+    font-family: 'Lato-Regular';
+    src: url(./assets/Lato-Regular.ttf);
+  }
+
+
+body{
+    margin: 0;
+}
+
+header{
+    background: #2D303A;
+    width: 1021px;
+    margin: 0 auto;
+    height: 90px;
+}
+
+.header__logo__text{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Lato-Bold';
+    font-size: 18px;
+}
+
+.header__nav__item{
+    list-style-type: none;
+    float: left;
+}
+
+.header__nav__item--link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 9px;
+    font-family: "Lato-Bold";
+}
+
+.header__bottom-line{
+    background: #323746;
+    width: 1021px;
+    margin: 0 auto;
+    height: 7px;
+}
+
+
+.active{
+    color: #F06C64;
+}
