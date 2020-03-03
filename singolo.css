@@ -245,6 +245,10 @@ main{
   color: #F06C64;
 }
 
+.unvisible{
+  display: none;
+}
+
 .portfolio{
   width: 1020px;
   margin: 0 auto;
@@ -391,7 +395,7 @@ main{
   font-size: 18px;
   color: #666d89;
   padding: 12px 0 8px 0;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.5gitpx;
 }
 
 .about-us__peoples__text{
@@ -439,4 +443,67 @@ main{
   height: 6px;
   background: #ffffff;
   margin: 0 auto;
+}
+
+.form{
+  background: #f06c64;
+  width: 940px;
+  height: 648px;
+  padding: 60px 40px 0px 40px;
+}
+
+.form__header{
+  font-family: 'Lato-Black';
+  color: #f0d8d9;
+  font-size: 28px;
+  margin: 0px 0px 18px 0px;
+  letter-spacing: 0.2px;
+  /* padding: 60px 0 0 0; */
+}
+
+.form__text{
+  font-family: 'Lato-Light';
+  font-size: 18px;
+  color: #f0d8d9;
+  margin: 0 0px 44px 0px;
+  line-height: 1.7;
+}
+
+.form__fields{
+  width: 619px;
+}
+
+.form__fields__item{
+  font-family: "Lato-Regular";
+  width: 605px;
+  font-size: 12px;
+  color: #f48c8f;
+  height: 38px;
+  border-radius: 5px;
+  background: #d6564f;
+  padding: 0px 0 0 14px;
+  border: 0px;
+  margin: 0 0 16px 0;
+}
+
+.form__fields__item--textarea{
+  font-family: "Lato-Regular";
+  height: 190px;
+  padding: 12px 0 0 16px;
+  width: 603px;
+  font-size: 12px;
+  color: #f48c8f;
+  border-radius: 5px;
+  background: #d6564f;
+  border: 0px;
+  margin: 0 0 16px 0;
+}
+.form__fields__item--textarea::placeholder{
+  font-family: "Lato-Regular";
+  /* letter-spacing: -2.1px; */
+}
+
+.form__fields__item::placeholder{
+  color: #f48c8f;
+  font-family: "Lato-Regular";
 }
