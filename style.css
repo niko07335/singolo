@@ -28,6 +28,8 @@ p {
   margin: 0;
 }
 
+
+
 header {
   background: #2D303A;
   width: 1020px;
@@ -36,6 +38,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  left: calc(50% - 510px);
+  z-index: 10;
+}
+.anchor {
+  position: absolute;
+  left: 0;
+  top: -87px;
 }
 
 .header__logo__text {
@@ -77,6 +87,7 @@ header {
   background: #323746;
   width: 1020px;
   margin: 0 auto;
+  padding: 89px 0 0 0;
   height: 6px;
 }
 
@@ -146,6 +157,7 @@ main {
   height: 434px;
   padding: 59.5px 40px 0 40px;
   letter-spacing: -0.17px;
+  position: relative;
 }
 
 .main__articles__title {
@@ -260,6 +272,7 @@ main {
   background: #2d303a;
   height: 802px;
   padding: 61px 0 0 0;
+  position: relative;
 }
 
 .portfolio__header,
@@ -362,6 +375,7 @@ main {
   background: #f2f2f2;
   margin: 0 auto;
   padding: 61px 0 0 0;
+  position: relative;
 }
 
 .about-us__title {
@@ -470,6 +484,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
 }
 
 .form__header {
@@ -644,4 +659,8 @@ main {
   margin: 0 auto;
   height: 6px;
   background: #ea676b;
+}
+
+.active_nav{
+  color: #F06C64;
 }
