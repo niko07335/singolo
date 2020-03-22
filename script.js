@@ -25,11 +25,31 @@ function onScroll(){
 }
 
 
+function portfolioActive(){
+  if(event.target.parentElement != document.querySelector('section.portfolio')){
+    document.querySelector('section.porfolio__projects__item.active_portfolio').classList.remove('active_portfolio');
+    event.target.parentElement.classList.add('active_portfolio');
+  }
+}
+
+function portfolioTag(){
+  let active_tag = document.querySelector('.active_portfolio_tag');
+  if (event.target.nodeName == 'A'){
+    active_tag.classList.remove("active_portfolio_tag");
+    event.target.classList.add("active_portfolio_tag");
+    let portfolioItems = document.querySelectorAll('section.porfolio__projects__item');
+    if (active_tag != event.target){
+      let newArr = Array.prototype.slice.call(portfolioItems).sort(() => Math.random() - 0.5);
+      newArr.forEach(element => {
+        document.querySelector('section.portfolio__projects').appendChild(element)
+      });
+    }
+  };
+}
 
 
-
-
-
+document.querySelector('section.portfolio__projects').addEventListener('click', portfolioActive);
+document.querySelector('section.portfolio__tags').addEventListener('click', portfolioTag)
 window.onload = onScroll;
 
 document.getElementById("nav").addEventListener("click", onScroll);
