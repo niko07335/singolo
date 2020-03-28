@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-function onScroll(){
-  let active_nav = document.getElementsByClassName('active_nav')[0];
-  const nav_links = document.getElementsByClassName('header__nav__item--link');
-
-  if (window.pageYOffset< 420) {
-  active_nav.classList.remove("active_nav");
-  nav_links[0].classList.add("active_nav");
-=======
 function onScroll() {
   let active_nav = document.getElementsByClassName('active_nav')[0];
   const nav_links = document.getElementsByClassName('header__nav__item--link');
@@ -14,7 +5,6 @@ function onScroll() {
   if (window.pageYOffset < 420) {
     active_nav.classList.remove("active_nav");
     nav_links[0].classList.add("active_nav");
->>>>>>> master
   }
   else if (window.pageYOffset >= 420 && window.pageYOffset < 930) {
     active_nav.classList.remove("active_nav");
@@ -35,10 +25,6 @@ function onScroll() {
 }
 
 
-<<<<<<< HEAD
-function portfolioActive(){
-  if(event.target.parentElement != document.querySelector('section.portfolio')){
-=======
 const allSlides = document.querySelectorAll('section.slider--item');
 
 function getActiveSlide() {
@@ -116,21 +102,11 @@ function sliderRight() {
 
 function portfolioActive() {
   if (event.target.parentElement != document.querySelector('section.portfolio')) {
->>>>>>> master
     document.querySelector('section.porfolio__projects__item.active_portfolio').classList.remove('active_portfolio');
     event.target.parentElement.classList.add('active_portfolio');
   }
 }
 
-<<<<<<< HEAD
-function portfolioTag(){
-  let active_tag = document.querySelector('.active_portfolio_tag');
-  if (event.target.nodeName == 'A'){
-    active_tag.classList.remove("active_portfolio_tag");
-    event.target.classList.add("active_portfolio_tag");
-    let portfolioItems = document.querySelectorAll('section.porfolio__projects__item');
-    if (active_tag != event.target){
-=======
 function portfolioTag() {
   let active_tag = document.querySelector('.active_portfolio_tag');
   if (event.target.nodeName == 'A') {
@@ -138,7 +114,6 @@ function portfolioTag() {
     event.target.classList.add("active_portfolio_tag");
     let portfolioItems = document.querySelectorAll('section.porfolio__projects__item');
     if (active_tag != event.target) {
->>>>>>> master
       let newArr = Array.prototype.slice.call(portfolioItems).sort(() => Math.random() - 0.5);
       newArr.forEach(element => {
         document.querySelector('section.portfolio__projects').appendChild(element)
@@ -147,15 +122,6 @@ function portfolioTag() {
   };
 }
 
-<<<<<<< HEAD
-
-document.querySelector('section.portfolio__projects').addEventListener('click', portfolioActive);
-document.querySelector('section.portfolio__tags').addEventListener('click', portfolioTag)
-window.onload = onScroll;
-
-document.getElementById("nav").addEventListener("click", onScroll);
-window.addEventListener('scroll',onScroll);
-=======
 const form = document.forms.contact_form;
 
 function formPush() {
@@ -186,4 +152,3 @@ window.onload = onScroll;
 form.submit.addEventListener('click', formPush);
 document.getElementById("nav").addEventListener("click", onScroll);
 window.addEventListener('scroll', onScroll);
->>>>>>> master
